@@ -12,7 +12,7 @@ docker run -d -p 19898:19898 myprint-docker
 docker logs $(docker ps | grep myprint-docker | awk '{print $1}')
 
 #进入容器
-docker exec -it $(docker ps | grep myprint | awk '{print $1}') /bin/bash
+docker exec -it $(docker ps | grep myprint-docker | awk '{print $1}') /bin/bash
 ```
 
 ## 请求测试

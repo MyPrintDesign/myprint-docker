@@ -1,0 +1,1 @@
+./myprint-server stop
